@@ -1,0 +1,23 @@
+# system-map.yml: notes for IO Fox's System Map. Format: NotesFile (version 1).
+# This repo is public: keep this file to what the repo itself shows.
+version: 1
+name: iofox-email-assets
+summary: >-
+  Public image hosting for IO Fox emails. GitHub Pages serves this repo's main branch at
+  iofoxofficial.github.io/iofox-email-assets, and email HTML links to the images there.
+  Images are organised by year and release (YYYY/<release>/<name>).
+lane: output
+status: live
+links:
+  - label: Pages site
+    url: "https://iofoxofficial.github.io/iofox-email-assets/"
+    kind: live
+stack:
+  - choice: GitHub Pages
+    role: Image hosting for emails
+    why: Each image gets a permanent public URL, and publishing one is a git push.
+    tradeoffs: Everything in the repo is public, which is fine for email images (they are public once sent).
+    links:
+      - label: GitHub Pages docs
+        url: "https://docs.github.com/en/pages"
+        kind: docs
